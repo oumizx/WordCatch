@@ -1,0 +1,22 @@
+import happybase
+connection = happybase.Connection('52.88.150.200')
+table11 = connection.table('one_first')
+table11.put(b'sacrifice', {b'first:word': b'to', b'first:count': b'668498', b'first:percent': b'20.5', b'second:word': b'the', b'second:count': b'490442', b'second:percent': b'15.0', b'third:word': b'a', b'third:count': b'364828', b'third:percent': b'11.2', b'fourth:word': b'and', b'fourth:count': b'245582', b'fourth:percent': b'7.5', b'fifth:word': b'of', b'fifth:count': b'167841', b'fifth:percent': b'5.1'})
+table12 = connection.table('one_second')
+table12.put(b'sacrifice', {b'first:word': b'of', b'first:count': b'449642', b'first:percent': b'17.9', b'second:word': b'to', b'second:count': b'230777', b'second:percent': b'9.2', b'third:word': b'and', b'third:count': b'211573', b'third:percent': b'8.4', b'fourth:word': b'for', b'fourth:count': b'198573', b'fourth:percent': b'7.9', b'fifth:word': b'the', b'fifth:count': b'124903', b'fifth:percent': b'5.0'})
+
+table21 = connection.table('two_first')
+
+# table21.put(b'behind you', {b'first:word': b'right', b'first:count': b'47453', b'first:percent': b'14.6', b'second:word': b'up', b'second:count': b'22824', b'second:percent': b'7.0', b'third:word': b'is', b'third:count': b'21164', b'third:percent': b'6.5', b'fourth:word': b'Right', b'fourth:count': b'16125', b'fourth:percent': b'4.9', b'fifth:word': b'look', b'fifth:count': b'14636', b'fifth:percent': b'4.5'})
+# table22 = connection.table('two_second')
+# table22.put(b'behind you', {b'first:word': b'when', b'first:count': b'8536', b'first:percent': b'16.8', b'second:word': b'what', b'second:count': b'6599', b'second:percent': b'13.0', b'third:word': b'as', b'third:count': b'4027', b'third:percent': b'7.9', b'fourth:word': b'and', b'fourth:count': b'3999', b'fourth:percent': b'7.9', b'fifth:word': b'if', b'fifth:count': b'3741', b'fifth:percent': b'7.4'})
+# table23 = connection.table('two_third')
+# table23.put(b'behind you', {b'first:word': b'and', b'first:count': b'50337', b'first:percent': b'25.4', b'second:word': b'in', b'second:count': b'14167', b'second:percent': b'7.1', b'third:word': b'to', b'third:count': b'10492', b'third:percent': b'5.3', b'fourth:word': b'is', b'fourth:count': b'8251', b'fourth:percent': b'4.2', b'fifth:word': b'should', b'fifth:count': b'8194', b'fifth:percent': b'4.1'})
+# table31 = connection.table('three_first')
+# table31.put(b'offer a solution', {b'first:word': b'to', b'first:count': b'12014', b'first:percent': b'32.9', b'second:word': b'can', b'second:count': b'3935', b'second:percent': b'10.8', b'third:word': b'not', b'third:count': b'3632', b'third:percent': b'9.9', b'fourth:word': b'and', b'fourth:count': b'2300', b'fourth:percent': b'6.3', b'fifth:word': b'may', b'fifth:count': b'2105', b'fifth:percent': b'5.8'})
+# table32 = connection.table('three_second')
+# table32.put(b'offer a solution', {b'first:word': b'you', b'first:count': b'2257', b'first:percent': b'32.9', b'second:word': b'can', b'second:count': b'3935', b'second:percent': b'10.8', b'third:word': b'not', b'third:count': b'3632', b'third:percent': b'9.9', b'fourth:word': b'and', b'fourth:count': b'2300', b'fourth:percent': b'6.3', b'fifth:word': b'may', b'fifth:count': b'2105', b'fifth:percent': b'5.8'})
+# table33 = connection.table('three_third')
+# table33.put(b'offer a solution', {b'first:word': b'complete', b'first:count': b'6764', b'first:percent': b'18.5', b'second:word': b'total', b'second:count': b'2765', b'second:percent': b'7.5', b'third:word': b'better', b'third:count': b'1731', b'third:percent': b'4.7', b'fourth:word': b'simple', b'fourth:count': b'1637', b'fourth:percent': b'4.5', b'fifth:word': b'comprehensive', b'fifth:count': b'1556', b'fifth:percent': b'4.2'})
+table34 = connection.table('three_fourth')
+#table34.put(b'offer a solution', {b'first:word': b'to', b'first:count': b'14117', b'first:percent': b'47.5', b'second:word': b'for', b'second:count': b'6484', b'second:percent': b'21.8', b'third:word': b'that', b'third:count': b'3737', b'third:percent': b'12.6', b'fourth:word': b'or', b'fourth:count': b'560', b'fourth:percent': b'1.9', b'fifth:word': b'in', b'fifth:count': b'551', b'fifth:percent': b'1.9'})
