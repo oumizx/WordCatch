@@ -145,7 +145,7 @@ class Search_view(View):
 
 
                 for i in range(len(wordlist)):
-                    percentlist.append(countlist[i]/total_num*100)
+                    percentlist.append(round(countlist[i]/total_num*100, 2))
 
                 # percentlist.append(row[b'first:percent'].decode("utf-8"))
                 # percentlist.append(row[b'second:percent'].decode("utf-8"))
