@@ -1,0 +1,134 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container theme-showcase" role="main">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-primary">{{ searchword }}</h3>
+        </div>
+        <div class="panel-body">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th class="col-md-9">N-gram</th>
+                    <th class="col-md-1">Percent</th>
+                    <th class="col-md-1">Count</th>
+                    <th class="col-md-1">Example</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        {{ word.0 }}
+                        <div class='progress'>
+                            <div class="progress-bar progressbar" role="progressbar" style="width:{{ percent.0 }}%;">
+
+                            </div>
+                        </div>
+                        <div id="example1" class="collapse">
+                            Currently not support.
+                        </div>
+                    </td>
+                    <td>
+                        {{ percent.0 }}%
+                    </td>
+                    <td>{{ count.0 }}</td>
+                    <td>
+                        <button type="button" class="btn btn-success" data-toggle="collapse" data-target="#example1">Show</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        {{ word.1 }}
+                        <div class='progress'>
+                            <div class="progress-bar progressbar" role="progressbar" style="width: {{ percent.1 }}%;">
+
+                            </div>
+                        </div>
+                        <div id="example2" class="collapse">
+                            Currently not support.
+                        </div>
+                    </td>
+
+                    <td>{{ percent.1 }}%</td>
+                    <td>{{ count.1 }}</td>
+                    <td>
+                        <button type="button" class="btn btn-success" data-toggle="collapse" data-target="#example2">Show</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        {{ word.2 }}
+
+                        <div class='progress'>
+                            <div class="progress-bar progressbar" role="progressbar" style="width: {{ percent.2 }}%;">
+
+                            </div>
+                        </div>
+                        <div id="example3" class="collapse">
+                            Currently not support.
+                        </div>
+                    </td>
+                    <td>{{ percent.2 }}%</td>
+                    <td>{{ count.2 }}</td>
+                    <td>
+                        <button type="button" class="btn btn-success" data-toggle="collapse" data-target="#example3">Show</button>
+
+
+
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        {{ word.3 }}
+                        <div class='progress'>
+                            <div class="progress-bar progressbar" role="progressbar" style="width: {{ percent.3 }}%;">
+
+                            </div>
+                        </div>
+                        <div id="example4" class="collapse">
+                            Currently not support.
+                        </div>
+                    </td>
+
+                    <td>{{ percent.3 }}%</td>
+                    <td>{{ count.3 }}</td>
+                    <td>
+                        <button type="button" class="btn btn-success" data-toggle="collapse" data-target="#example4">Show</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        {{ word.4 }}
+                        <div class='progress'>
+                            <div class="progress-bar progressbar" role="progressbar" style="width: {{ percent.4 }}%;">
+
+                            </div>
+                        </div>
+                        <div id="example5" class="collapse">
+                            Currently not support.
+                        </div>
+                    </td>
+
+                    <td>{{ percent.4 }}%</td>
+                    <td>{{ count.4 }}</td>
+                    <td>
+                        <button type="button" class="btn btn-success" data-toggle="collapse" data-target="#example5">Show</button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+</div>
+<div class="container theme-showcase" role="main">
+<form method="get" action="">
+    <button class="btn btn-primary btn-md" type="submit">Back to index</button>
+</form>
+</div>
+
+{% endblock content %}

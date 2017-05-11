@@ -21,6 +21,6 @@ from wc.views import HomeView
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', HomeView.as_view()),
+    url(r'^', include('wc.urls', namespace='word_catch')),
     #url(r'^index/', HomeView.as_view()),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

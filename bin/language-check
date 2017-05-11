@@ -1,0 +1,6 @@
+#!/Users/michael/Documents/CC/Project/wordcatch/bin/python3.6
+
+import sys
+
+from language_check import main
+sys.exit(main.main())

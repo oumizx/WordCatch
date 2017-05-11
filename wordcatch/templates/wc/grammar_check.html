@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<div class="intro-header">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="intro-message">
+                    <h1>Grammar check</h1>
+                    <h3>Input sentences to check</h3>
+                    <hr class="intro-divider">
+                    <div class = "text-center">
+                        <form action="/grammar_check/" method="POST"> {% csrf_token %}
+                            <div class="row input-black">
+
+                                ​<textarea id="txtArea" rows="8" cols="70" name="sentences"></textarea>
+
+
+
+                            </div>
+                            <input class="btn btn-primary btn-sm" type="submit" value="Submit"/>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- /.container -->
+
+</div>
+
+{% endblock content %}
