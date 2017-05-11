@@ -2,20 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="605695e8-d652-43df-8e93-e3c1971f10a4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wordcatch/templates/wc/grammar_check.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wordcatch/templates/wc/grammar_check_result.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wordcatch/templates/wc/speech_search.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wordcatch/wc/test2.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wordcatch/wc/urls.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wordcatch/wc/templates/base.html" afterPath="$PROJECT_DIR$/wordcatch/templates/base.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wordcatch/wc/templates/wc/error_empty.html" afterPath="$PROJECT_DIR$/wordcatch/templates/wc/error_empty.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wordcatch/wc/templates/wc/error_wrong.html" afterPath="$PROJECT_DIR$/wordcatch/templates/wc/error_wrong.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wordcatch/wc/templates/wc/index.html" afterPath="$PROJECT_DIR$/wordcatch/templates/wc/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wordcatch/wc/templates/wc/search_or.html" afterPath="$PROJECT_DIR$/wordcatch/templates/wc/search_or.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wordcatch/wc/templates/wc/search_result.html" afterPath="$PROJECT_DIR$/wordcatch/templates/wc/search_result.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pip-selfcheck.json" afterPath="$PROJECT_DIR$/pip-selfcheck.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wordcatch/wc/tests.py" afterPath="$PROJECT_DIR$/wordcatch/wc/tests.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wordcatch/templates/wc/index.html" afterPath="$PROJECT_DIR$/wordcatch/templates/wc/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wordcatch/wc/urls.py" afterPath="$PROJECT_DIR$/wordcatch/wc/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wordcatch/wc/views.py" afterPath="$PROJECT_DIR$/wordcatch/wc/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wordcatch/wordcatch/urls.py" afterPath="$PROJECT_DIR$/wordcatch/wordcatch/urls.py" />
     </list>
@@ -42,8 +31,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wordcatch/wc/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="147" column="31" lean-forward="false" selection-start-line="147" selection-start-column="31" selection-end-line="147" selection-end-column="31" />
+            <state relative-caret-position="-1281">
+              <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
               <folding>
                 <element signature="e#0#67#0" expanded="true" />
               </folding>
@@ -54,8 +43,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wordcatch/templates/wc/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="210">
+              <caret line="14" column="46" lean-forward="false" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -84,8 +73,8 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wordcatch/wc/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="41" lean-forward="false" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+            <state relative-caret-position="60">
+              <caret line="4" column="56" lean-forward="false" selection-start-line="4" selection-start-column="56" selection-end-line="4" selection-end-column="56" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -97,7 +86,7 @@
         <entry file="file://$PROJECT_DIR$/wordcatch/wordcatch/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
-              <caret line="23" column="54" lean-forward="false" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
+              <caret line="23" column="58" lean-forward="false" selection-start-line="23" selection-start-column="58" selection-end-line="23" selection-end-column="58" />
               <folding>
                 <element signature="e#643#684#0" expanded="true" />
               </folding>
@@ -130,8 +119,8 @@
       <file leaf-file-name="test2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wordcatch/wc/test2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="37" lean-forward="false" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="37" />
+            <state relative-caret-position="300">
+              <caret line="20" column="39" lean-forward="false" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -140,7 +129,7 @@
       <file leaf-file-name="search_result.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wordcatch/templates/wc/search_result.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="-1065">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="25" />
               <folding />
             </state>
@@ -167,6 +156,7 @@
       <find>alert</find>
       <find>form</find>
       <find>response</find>
+      <find>52</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -191,18 +181,18 @@
         <option value="$PROJECT_DIR$/wordcatch/wc/templates/wc/search_result.html" />
         <option value="$PROJECT_DIR$/wordcatch/wc/templates/wc/index.html" />
         <option value="$PROJECT_DIR$/wordcatch/wc/templates/base.html" />
-        <option value="$PROJECT_DIR$/wordcatch/wordcatch/urls.py" />
         <option value="$PROJECT_DIR$/wordcatch/wc/templates/wc/urls.py" />
         <option value="$PROJECT_DIR$/wordcatch/templates/wc/grammer_check.html" />
         <option value="$PROJECT_DIR$/wordcatch/wc/tests.py" />
         <option value="$PROJECT_DIR$/wordcatch/templates/wc/grammar_check.html" />
         <option value="$PROJECT_DIR$/wordcatch/templates/wc/grammer_check_result.html" />
         <option value="$PROJECT_DIR$/wordcatch/templates/wc/grammar_check_result.html" />
-        <option value="$PROJECT_DIR$/wordcatch/templates/wc/index.html" />
-        <option value="$PROJECT_DIR$/wordcatch/wc/urls.py" />
         <option value="$PROJECT_DIR$/wordcatch/templates/base.html" />
         <option value="$PROJECT_DIR$/wordcatch/templates/wc/speech_search.html" />
         <option value="$PROJECT_DIR$/wordcatch/wc/test2.py" />
+        <option value="$PROJECT_DIR$/wordcatch/wc/urls.py" />
+        <option value="$PROJECT_DIR$/wordcatch/wordcatch/urls.py" />
+        <option value="$PROJECT_DIR$/wordcatch/templates/wc/index.html" />
         <option value="$PROJECT_DIR$/wordcatch/wc/views.py" />
       </list>
     </option>
@@ -990,24 +980,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wordcatch/wordcatch/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="54" lean-forward="false" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
-          <folding>
-            <element signature="e#643#684#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wordcatch/templates/wc/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wordcatch/wordcatch/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="316">
@@ -1016,36 +988,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wordcatch/wc/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="41" lean-forward="false" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wordcatch/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wordcatch/templates/wc/search_result.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wordcatch/templates/wc/speech_search.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2235">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="69" />
           <folding />
         </state>
       </provider>
@@ -1060,18 +1006,62 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/wordcatch/templates/wc/search_result.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1065">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordcatch/templates/wc/speech_search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2235">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordcatch/wc/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="56" lean-forward="false" selection-start-line="4" selection-start-column="56" selection-end-line="4" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordcatch/wordcatch/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="58" lean-forward="false" selection-start-line="23" selection-start-column="58" selection-end-line="23" selection-end-column="58" />
+          <folding>
+            <element signature="e#643#684#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordcatch/templates/wc/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="46" lean-forward="false" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wordcatch/wc/test2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="37" lean-forward="false" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="37" />
+        <state relative-caret-position="300">
+          <caret line="20" column="39" lean-forward="false" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wordcatch/wc/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="147" column="31" lean-forward="false" selection-start-line="147" selection-start-column="31" selection-end-line="147" selection-end-column="31" />
+        <state relative-caret-position="-1281">
+          <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
           <folding>
             <element signature="e#0#67#0" expanded="true" />
           </folding>

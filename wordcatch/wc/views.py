@@ -10,7 +10,7 @@ import boto3
 
 tool = language_check.LanguageTool('en-US')
 
-session = boto3.Session(profile_name='dev')
+session = boto3.Session(profile_name='dev2')
 # Any clients created from this session will use credentials
 # from the [dev] section of ~/.aws/credentials.
 
@@ -56,12 +56,12 @@ def Speech_search(request):
 
 
 
-class HomeView(View):
+class Search_view(View):
     def get(self, request, *args, **kwargs):
         return render(request, "wc/index.html", {})
 
     def post(self, request, *args, **kwargs):
-        connection = happybase.Connection('52.88.150.200')
+
         words = request.POST["words"]
         context = {}
         if(words == ""):
@@ -84,13 +84,9 @@ class HomeView(View):
                         str_input = str_input + ' '
                 i = i + 1
             str_input = str_input.strip()
-            print(str_input + "end")
-            if (wordlen == 2):
-                if (pos == 0):
-                    table = connection.table('one_first')
-                elif (pos == 1):
-                    table = connection.table('one_second')
-            elif (wordlen == 3):
+
+            print(pos)
+            if (wordlen == 3):
                 if (pos == 0):
                     table = dynamodb.Table('ThreeFirst')
                 elif (pos == 1):
@@ -106,30 +102,28 @@ class HomeView(View):
                     table = dynamodb.Table('FourThird')
                 elif (pos == 3):
                     table = dynamodb.Table('FourLast')
-            elif (wordlen == 5):
-                if (pos == 0):
-                    table = connection.table('four_first')
-                elif (pos == 1):
-                    table = connection.table('four_second')
-                elif (pos == 2):
-                    table = connection.table('four_third')
-                elif (pos == 3):
-                    table = connection.table('four_fourth')
-                elif (pos == 4):
-                    table = connection.table('four_fifth')
-            row = table.get_item(Key={'Keyword': str_input})
 
+
+            row = table.get_item(Key={'Keyword': str_input})
+            print(str_input + "end")
             if (row == {}):
                 template = "wc/error_wrong.html"
             else:
-                length = len(row['Item']['content']) / 2
+                length = int(len(row['Item']['content']) / 2)
+
                 template = "wc/search_result.html"
+                total_num = 0
                 for i in range(length):
                     #   length ? i  ?
                     word_tag = str(i + 1) + "word"
                     wordnum_tag = str(i + 1) + "num"
-                    wordlist.append(row['Item']['content'][word_tag])
-                    countlist.append(row['Item']['content'][wordnum_tag])
+                    cur_word = row['Item']['content'][word_tag]
+                    cur_num = row['Item']['content'][wordnum_tag]
+                    total_num = total_num + cur_num
+                    if i < 5:
+                        wordlist.append(cur_word)
+                        countlist.append(cur_num)
+
                 print(wordlist)
                 k = 0
                 for wd in wordlist:
@@ -148,12 +142,10 @@ class HomeView(View):
 
                 print(wordlist)
 
-                totalAmount = 0
-                for num in countlist:
-                    totalAmout = totalAmout + num
 
-                for i in range(length):
-                    percentlist.append(countlist[i]/totalAmout)
+
+                for i in range(len(wordlist)):
+                    percentlist.append(countlist[i]/total_num*100)
 
                 # percentlist.append(row[b'first:percent'].decode("utf-8"))
                 # percentlist.append(row[b'second:percent'].decode("utf-8"))
