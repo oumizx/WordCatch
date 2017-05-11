@@ -125,8 +125,9 @@ class HomeView(View):
                 length = len(row['Item']['content']) / 2
                 template = "wc/search_result.html"
                 for i in range(length):
-                    word_tag = str(length + 1) + "word"
-                    wordnum_tag = str(length + 1) + "num"
+                    #   length ? i  ?
+                    word_tag = str(i + 1) + "word"
+                    wordnum_tag = str(i + 1) + "num"
                     wordlist.append(row['Item']['content'][word_tag])
                     countlist.append(row['Item']['content'][wordnum_tag])
                 print(wordlist)
@@ -146,11 +147,19 @@ class HomeView(View):
                     k = k + 1
 
                 print(wordlist)
-                percentlist.append(row[b'first:percent'].decode("utf-8"))
-                percentlist.append(row[b'second:percent'].decode("utf-8"))
-                percentlist.append(row[b'third:percent'].decode("utf-8"))
-                percentlist.append(row[b'fourth:percent'].decode("utf-8"))
-                percentlist.append(row[b'fifth:percent'].decode("utf-8"))
+
+                totalAmount = 0
+                for num in countlist:
+                    totalAmout = totalAmout + num
+
+                for i in range(length):
+                    percentlist.append(countlist[i]/totalAmout)
+
+                # percentlist.append(row[b'first:percent'].decode("utf-8"))
+                # percentlist.append(row[b'second:percent'].decode("utf-8"))
+                # percentlist.append(row[b'third:percent'].decode("utf-8"))
+                # percentlist.append(row[b'fourth:percent'].decode("utf-8"))
+                # percentlist.append(row[b'fifth:percent'].decode("utf-8"))
 
             context = {
                 "searchword": words,
